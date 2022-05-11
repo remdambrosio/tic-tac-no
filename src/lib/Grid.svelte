@@ -10,15 +10,17 @@
   let hit = "start";
 
   function handleClick(i) {
-    if (!dots[i]) {
-      if (Math.floor(Math.random() * 4) != 0) {
-        dots[i] = xIsNext ? "X" : "O";
-        xIsNext = !xIsNext;
-        end = calculateEnd(dots);
-        hit = "yes"
-      } else {
-        xIsNext = !xIsNext;
-        hit = "no"
+    if (!end) {
+      if (!dots[i]) {
+        if (Math.floor(Math.random() * 4) != 0) {
+          dots[i] = xIsNext ? "X" : "O";
+          xIsNext = !xIsNext;
+          end = calculateEnd(dots);
+          hit = "yes"
+        } else {
+          xIsNext = !xIsNext;
+          hit = "no"
+        }
       }
     }
   }
