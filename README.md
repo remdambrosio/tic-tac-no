@@ -1,1 +1,1 @@
-Svelte practice project created while on the Map UVic team. I wanted to explore reactivity and pass states around, while pursuing the overall goal of making a worse (but debatably more interesting) version of tic tac toe.
+Svelte practice project created while on the Map UVic team. I wanted to explore reactivity and pass state around, while pursuing the overall goal of making a worse (but debatably more interesting) version of tic tac toe.
